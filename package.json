@@ -1,0 +1,42 @@
+{
+  "name": "interview-react-frontend-01",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "apollo-boost": "^0.4.3",
+    "graphql": "^14.4.2",
+    "react": "^16.12.0",
+    "react-apollo": "^3.1.4",
+    "react-apollo-hooks": "^0.5.0",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "16.8.23",
+    "@types/react-dom": "^16.9.6",
+    "@types/styled-components": "^5.1.7",
+    "prettier": "^2.0.4",
+    "react-scripts": "3.3.0-next.62",
+    "typescript": "^3.9.0-dev.20200407",
+    "watch": "^1.0.2",
+    "webpack": "4.41.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
