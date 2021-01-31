@@ -8,8 +8,8 @@ const FEED_QUERY = gql`
     search(query: "org.facebook", type: REPOSITORY, first: 100) {
       nodes {
         ... on Repository {
-          name
-          description
+          title: name
+          content: description
         }
       }
     }
@@ -22,12 +22,7 @@ export const GitHubList: React.FC = () => {
   if (loading) return <>"Loading..."</>;
   if (error) return <>`Error! ${error.message}`</>;
 
-  const payload = data.search.nodes.map((val: any) => {
-    return {
-      title: val.name,
-      content: val.description,
-    };
-  });
+  const payload = data.search.nodes;
 
   return <MasterDetail payload={payload} />;
 };
